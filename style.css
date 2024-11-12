@@ -1,132 +1,138 @@
-/* Global reset */
-* {
+/* Global Styles */
+body {
+  font-family: 'Arial', sans-serif;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  background-color: #f4f4f4;
 }
 
-/* Body styling */
-body {
-  font-family: "Calibri", sans-serif;
-  font-weight: bold;
+h1, h2, h3 {
+  color: #333;
+}
+
+p {
+  font-size: 1.1em;
   line-height: 1.6;
-  background-color: #333; /* Dark grey background */
-  color: white; /* White text */
-  text-align: center; /* Center text horizontally */
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100vh; /* Full viewport height */
 }
 
-/* Navigation enhancements */
-nav ul {
-  list-style-type: none;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  gap: 1.5rem;
-  background-color: #444;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add subtle shadow for separation */
-  position: sticky;
-  top: 0;
-  z-index: 1000; /* Ensures navigation stays on top */
-}
-
-nav a {
-  color: white;
+a {
+  color: #0066cc;
   text-decoration: none;
-  padding: 0.75rem 1.25rem; /* Increase padding for better clickability */
-  font-size: 1.1rem;
-  transition: all 0.3s ease; /* Smooth transition for hover effects */
-  border-radius: 4px; /* Rounded corners for a smoother look */
 }
 
-nav a:hover {
-  background-color: #ffdd57; /* Add background change on hover */
-  color: #333;
-  transform: scale(1.05); /* Slight scale-up effect on hover */
+a:hover {
+  text-decoration: underline;
 }
 
-/* Section and footer styling */
-section {
-  padding: 2rem 1rem;
-  max-width: 800px;
-  margin: 2rem auto; /* Add space around sections */
-  background-color: #f9f9f9;
-  border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Increased shadow for depth */
-  transition: all 0.3s ease-in-out; /* Smooth transition for hover */
-}
-
-section:hover {
-  transform: translateY(-5px); /* Hover effect for sections */
-}
-
-/* Footer styling */
-footer {
-  background-color: #222;
+/* Header Styles */
+header {
+  background-color: #333;
   color: white;
-  padding: 1rem 0;
-  margin-top: 3rem;
+  padding: 20px 0;
   text-align: center;
-  font-size: 1.1rem;
-  letter-spacing: 0.5px; /* Slight letter-spacing for better readability */
 }
 
-footer a {
-  color: #ffdd57;
+header h1 {
+  font-size: 2.5em;
+}
+
+header p {
+  font-size: 1.2em;
+}
+
+/* Navigation Styles */
+nav {
+  background-color: #333;
+  color: white;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  margin: 0 20px;
+}
+
+nav ul li a {
+  color: white;
+  font-size: 1.1em;
+}
+
+nav ul li a:hover {
+  color: #ff6600;
+}
+
+/* Main Section Styles */
+main {
+  padding: 50px 10%;
+  background-color: white;
+}
+
+section {
+  margin-bottom: 40px;
+}
+
+section h2 {
+  font-size: 2em;
+  border-bottom: 2px solid #0066cc;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+article.project {
+  background-color: #e9f1f7;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+
+article.project h3 {
+  font-size: 1.5em;
+}
+
+article.project a {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #0066cc;
+  color: white;
   text-decoration: none;
-  transition: color 0.3s;
+  border-radius: 5px;
 }
 
-footer a:hover {
-  color: #fff;
+article.project a:hover {
+  background-color: #004d99;
 }
 
-/* Heading styling */
-h2 {
-  color: #333;
-  font-size: 2rem; /* Larger heading font */
-  border-bottom: 3px solid #ffdd57; /* Use brand color for underline */
-  padding-bottom: 0.5rem;
-  margin-bottom: 2rem; /* Add margin for spacing */
+/* Footer Styles */
+footer {
+  background-color: #333;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
 }
 
-/* Experience and project cards */
-.experience, .project {
-  background-color: #fff;
-  border: 1px solid #ddd;
-  padding: 1.5rem;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  margin-bottom: 2rem; /* More space between cards */
-  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
-}
-
-.experience:hover, .project:hover {
-  transform: translateY(-5px); /* Hover effect for cards */
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Stronger shadow on hover */
-}
-
-/* Responsive design for smaller screens */
+/* Responsive Design */
 @media (max-width: 768px) {
-  body {
-    font-size: 16px;
+  header h1 {
+    font-size: 2em;
   }
 
   nav ul {
-    flex-direction: column; /* Stack nav items vertically on small screens */
-    gap: 1rem;
+    flex-direction: column;
+    align-items: center;
   }
 
-  nav a {
-    padding: 0.75rem 1rem;
+  main {
+    padding: 20px;
   }
 
-  section {
-    max-width: 95%;
-    padding: 1rem; /* Reduce padding for smaller screens */
+  article.project {
+    margin: 10px 0;
   }
 }
