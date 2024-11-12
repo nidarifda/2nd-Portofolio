@@ -40,6 +40,15 @@ header p {
   font-size: 1.2em;
 }
 
+/* Circular Image */
+.circular-image {
+  width: 150px;        /* Set the width */
+  height: 150px;       /* Set the height */
+  border-radius: 50%;  /* Makes the image circular */
+  object-fit: cover;   /* Ensures the image covers the circle without distortion */
+  margin-bottom: 20px; /* Optional: space below the image */
+}
+
 /* Navigation Styles */
 nav {
   background-color: #333;
