@@ -4,6 +4,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: #f4f4f4;
+  color: #333;
 }
 
 h1, h2, h3 {
@@ -30,10 +31,12 @@ header {
   color: white;
   padding: 20px 0;
   text-align: center;
+  box-shadow: 0 4px 2px -2px gray;
 }
 
 header h1 {
   font-size: 2.5em;
+  margin: 0;
 }
 
 header p {
@@ -42,11 +45,12 @@ header p {
 
 /* Circular Image */
 .circular-image {
-  width: 100px;        /* Set the width to a smaller size */
-  height: 100px;       /* Set the height to match the width */
-  border-radius: 50%;  /* Makes the image circular */
-  object-fit: cover;   /* Ensures the image covers the circle without distortion */
-  margin-bottom: 20px; /* Optional: space below the image */
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 20px;
+  border: 3px solid #fff; /* Adds a white border around the image */
 }
 
 /* Navigation Styles */
@@ -80,6 +84,7 @@ nav ul li a:hover {
 main {
   padding: 50px 10%;
   background-color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 section {
@@ -98,10 +103,12 @@ article.project {
   padding: 20px;
   margin-bottom: 20px;
   border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 article.project h3 {
   font-size: 1.5em;
+  margin-top: 0;
 }
 
 article.project a {
@@ -112,6 +119,7 @@ article.project a {
   color: white;
   text-decoration: none;
   border-radius: 5px;
+  transition: background-color 0.3s ease;
 }
 
 article.project a:hover {
@@ -124,6 +132,12 @@ footer {
   color: white;
   padding: 20px 0;
   text-align: center;
+  box-shadow: 0 -4px 2px -2px gray;
+}
+
+footer p {
+  font-size: 1em;
+  margin: 0;
 }
 
 /* Responsive Design */
@@ -135,6 +149,10 @@ footer {
   nav ul {
     flex-direction: column;
     align-items: center;
+  }
+
+  nav ul li {
+    margin: 10px 0;
   }
 
   main {
