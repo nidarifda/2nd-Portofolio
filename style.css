@@ -42,8 +42,8 @@ header p {
 
 /* Circular Image */
 .circular-image {
-  width: 150px;        /* Set the width */
-  height: 150px;       /* Set the height */
+  width: 100px;        /* Set the width to a smaller size */
+  height: 100px;       /* Set the height to match the width */
   border-radius: 50%;  /* Makes the image circular */
   object-fit: cover;   /* Ensures the image covers the circle without distortion */
   margin-bottom: 20px; /* Optional: space below the image */
